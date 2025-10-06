@@ -6,24 +6,35 @@
   <style>
     body {
       font-family: system-ui, sans-serif;
-      max-width: 900px;
+      max-width: 960px;
       margin: 40px auto;
       padding: 0 20px;
+      line-height: 1.6;
     }
     img {
       display: block;
       max-width: 500px;
       width: 100%;
-      margin: 20px auto;
+      margin: 24px auto;
       border: 1px solid #ccc;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     h1, h2 {
       text-align: center;
     }
+    h1 {
+      margin-bottom: 10px;
+    }
+    h2 {
+      margin-top: 40px;
+    }
+    ul {
+      padding-left: 20px;
+    }
     .footer {
       margin-top: 60px;
       text-align: center;
+      font-size: 14px;
     }
     .footer a {
       color: #007bff;
@@ -34,18 +45,25 @@
 <body>
   <h1>BladePeek</h1>
   <p style="text-align:center; font-size: 18px;">
-    A lightweight offline app for wind turbine blade inspections.
+    An offline-first mobile app for internal blade inspections.
   </p>
 
-  <h2>Main Features</h2>
+  <h2>What is BladePeek?</h2>
+  <p>
+    BladePeek is a lightweight inspection tool designed for wind turbine technicians. It allows users to capture internal blade damage photos, record critical metadata, and export the results in structured folders and CSV logs — all without requiring internet access.
+  </p>
+
+  <h2>Key Features</h2>
   <ul>
-    <li>Capture inspection photos directly from within the app</li>
-    <li>Tag damage with chamber, blade face, and radius</li>
-    <li>Enter damage dimensions and add comments</li>
-    <li>Export images and CSV logs for reporting</li>
-    <li>Offline license-based access control</li>
+    <li>Capture inspection photos directly from the in-app camera</li>
+    <li>Tag each photo with chamber (LE, TE), blade face (A/B), and radius markers</li>
+    <li>Log damage dimensions (length, width, depth) and include freeform comments</li>
+    <li>Organize inspections per site, turbine, and blade</li>
+    <li>Export image folders and CSV damage logs via iOS Files or AirDrop</li>
+    <li>Simple license system using Device Access Code (no login required)</li>
   </ul>
 
+  <h2>App Screenshots</h2>
   <img src="Main Screen.png" alt="Main Screen">
   <img src="Main Screen site requirements.png" alt="Site Requirements">
   <img src="License tab.png" alt="License Tab">
@@ -55,6 +73,16 @@
   <img src="Inspection picture view.png" alt="Inspection Picture View">
   <img src="Manage Inspection tab.png" alt="Manage Inspection Tab">
   <img src="Manage damages table.png" alt="Manage Damages Table">
+
+  <h2>Offline and Secure</h2>
+  <p>
+    BladePeek is fully functional offline. No data is uploaded or synced to the cloud. All information stays on the user’s device unless they choose to export it manually.
+  </p>
+
+  <h2>Designed for Technicians</h2>
+  <p>
+    The interface is optimized for field use: large buttons, fast photo capture, and minimal navigation. BladePeek helps standardize damage reporting across teams and reduce manual data entry.
+  </p>
 
   <div class="footer">
     <p><a href="privacy.html">Privacy Policy</a></p>
