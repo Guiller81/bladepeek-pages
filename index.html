@@ -1,17 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>BladePeek – Wind Turbine Blade Inspection App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BladePeek - Internal Blade Inspection App</title>
+  <style>
+    body { font-family: sans-serif; margin: 40px; line-height: 1.6; max-width: 800px; }
+    h1, h2 { color: #004080; }
+    img { max-width: 100%; border: 1px solid #ccc; border-radius: 6px; margin: 12px 0; }
+    .screenshot-title { font-weight: bold; margin-top: 16px; }
+  </style>
 </head>
 <body>
   <h1>BladePeek</h1>
-  <p>An offline-first app for wind turbine blade inspections.</p>
-  <ul>
-    <li>📷 Capture damage photos with metadata</li>
-    <li>🗂️ Export folders with photos + CSV logs</li>
-    <li>🔐 License-based technician access</li>
-  </ul>
-  <p>Read our <a href="./privacy.html">Privacy Policy</a>.</p>
+  <p><strong>BladePeek</strong> is a field inspection app designed to streamline internal wind turbine blade inspections. It helps technicians document, manage, and report blade conditions efficiently, following site-specific requirements and capturing essential damage data.</p>
+
+  <h2>App Workflow Overview</h2>
+  <ol>
+    <li>
+      <strong>Landing Screen & Tabs:</strong> The main screen displays the three app tabs: <em>Inspect Turbine</em>, <em>Manage Inspections</em>, and <em>License</em>.<br>
+      <div class="screenshot-title">Screenshot: Main Screen</div>
+      <img src="Main Screen.png" alt="Main Screen">
+    </li>
+    <li>
+      <strong>License Activation:</strong> The user must visit the <em>License</em> tab and click <strong>Get Device Access Code</strong> to retrieve a unique device ID. This code is sent to the engineering team for license generation.<br>
+      <div class="screenshot-title">Screenshot: License Tab</div>
+      <img src="License tab.png" alt="License Tab">
+    </li>
+    <li>
+      <strong>Token Entry:</strong> Once the license token is received, the user enters it and taps <strong>Verify License</strong> to activate the app.
+    </li>
+    <li>
+      <strong>Starting an Inspection:</strong> In the <em>Inspect Turbine</em> tab, the user selects a wind farm and WTG ID. If the site has specific requirements, they are shown in a popup before inspection begins.<br>
+      <div class="screenshot-title">Screenshot: Site Requirements</div>
+      <img src="Main Screen site requirements.png" alt="Site Requirements">
+    </li>
+    <li>
+      <strong>Camera View:</strong> The camera interface is used to take inspection photos. The UI includes:
+      <ul>
+        <li>Top Left: Site and WTG ID</li>
+        <li>Right Side (Top to Bottom):<br>
+          • Shutter button<br>
+          • Flash toggle<br>
+          • Blade selector<br>
+          • Chamber selector<br>
+          • Radius selector<br>
+          • <strong>Damage</strong> (opens form)<br>
+          • <strong>Done</strong> (returns to home)
+        </li>
+      </ul>
+      <div class="screenshot-title">Screenshot: Camera View</div>
+      <img src="Camera view.png" alt="Camera View">
+    </li>
+    <li>
+      <strong>Damage Form:</strong> Complete required fields such as component, subcomponent, and measurements, then save.<br>
+      <div class="screenshot-title">Screenshot: Damage Form</div>
+      <img src="Damage form.png" alt="Damage Form">
+    </li>
+    <li>
+      <strong>Manage Inspections:</strong> In this tab, the user sees a list of all inspections performed. Each inspection can be deleted or exported.<br>
+      <div class="screenshot-title">Screenshot: Manage Inspections</div>
+      <img src="Manage Inspection tab.png" alt="Manage Inspection Tab">
+    </li>
+    <li>
+      <strong>Manage Damages:</strong> Inside a selected inspection, the user can click <strong>Manage Damages</strong> to edit or delete previous damage reports.<br>
+      <div class="screenshot-title">Screenshot: Manage Damage Table</div>
+      <img src="Manage damages table.png" alt="Manage Damage Table">
+    </li>
+    <li>
+      <strong>Review Pictures:</strong> Users can browse pictures taken and also create new damage entries from them.<br>
+      <div class="screenshot-title">Screenshot: Inspection Picture View</div>
+      <img src="Inspection picture view.png" alt="Inspection Picture View">
+    </li>
+  </ol>
+
+  <p><em>Note: License tokens are managed internally. Please contact your engineering department with the device code to request activation. Personal contact information is intentionally not listed here.</em></p>
 </body>
 </html>
