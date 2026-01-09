@@ -3,33 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BladePeek - Internal Blade Inspection App</title>
+  <title>BladePeek - Blade Inspection App (RWE)</title>
   <style>
     body { font-family: sans-serif; margin: 40px; line-height: 1.6; max-width: 800px; }
     h1, h2 { color: #004080; }
     img { width: 70%; border: 1px solid #ccc; border-radius: 6px; margin: 12px 0; display: block; margin-left: auto; margin-right: auto; }
     .screenshot-title { font-weight: bold; margin-top: 16px; text-align: center; }
     .footer { margin-top: 40px; text-align: center; }
+    .note { background: #f4f7ff; border: 1px solid #c9d7ff; padding: 12px 14px; border-radius: 8px; }
   </style>
 </head>
 <body>
   <h1>BladePeek</h1>
-  <p><strong>BladePeek</strong> is a field inspection app designed to streamline internal wind turbine blade inspections. It helps technicians document, manage, and report blade conditions efficiently, following site-specific requirements and capturing essential damage data.</p>
+  <p><strong>BladePeek</strong> is a field inspection app designed to streamline wind turbine blade inspections. It helps technicians document, manage, and export inspection findings efficiently by capturing photos and structured damage metadata.</p>
+
+  <div class="note">
+    <p><strong>Intended audience:</strong> RWE employees and authorized contractors.</p>
+    <p><strong>Access:</strong> BladePeek requires an <strong>RWE Access Code</strong> to enable inspection features. Access codes are issued by RWE to authorized users. <strong>No purchases</strong> are required or available in the app.</p>
+  </div>
 
   <h2>App Workflow Overview</h2>
   <ol>
     <li>
-      <strong>Landing Screen & Tabs:</strong> The main screen displays the three app tabs: <em>Inspect Turbine</em>, <em>Manage Inspections</em>, and <em>License</em>.<br>
+      <strong>Landing Screen & Tabs:</strong> The main screen displays the three app tabs: <em>Inspect Turbine</em>, <em>Manage Inspections</em>, and <em>Access</em>.<br>
       <div class="screenshot-title">Screenshot: Main Screen</div>
       <img src="Main Screen.png" alt="Main Screen">
     </li>
     <li>
-      <strong>License Activation:</strong> The user must visit the <em>License</em> tab and click <strong>Get Device Access Code</strong> to retrieve a unique device ID. This code is sent to the engineering team for license generation.<br>
-      <div class="screenshot-title">Screenshot: License Tab</div>
-      <img src="License tab.png" alt="License Tab">
+      <strong>Access Setup:</strong> The user visits the <em>Access</em> tab and taps <strong>Get Device Registration Code</strong> to retrieve a code for this installation. This code is provided to the RWE administrator/support contact to issue an <strong>RWE Access Code</strong>.<br>
+      <div class="screenshot-title">Screenshot: Access Tab</div>
+      <img src="License tab.png" alt="Access Tab">
     </li>
     <li>
-      <strong>Token Entry:</strong> Once the license token is received, the user enters it and taps <strong>Verify License</strong> to activate the app.
+      <strong>Enter RWE Access Code:</strong> When you receive the <strong>RWE Access Code</strong>, paste it and tap <strong>Verify Access</strong> to enable inspection features.
     </li>
     <li>
       <strong>Starting an Inspection:</strong> In the <em>Inspect Turbine</em> tab, the user selects a wind farm and WTG ID. If the site has specific requirements, they are shown in a popup before inspection begins.<br>
@@ -47,7 +53,7 @@
           • Chamber selector<br>
           • Radius selector<br>
           • <strong>FD</strong> (opens full damage form)<br>
-          • <strong>FD</strong> (takes quick damage picture)<br>
+          • <strong>QD</strong> (takes quick damage picture)<br>
           • <strong>Done</strong> (returns to home)
         </li>
       </ul>
@@ -78,18 +84,16 @@
 
   <h2>Support</h2>
   <p>
-    If you have questions, find a bug, or need help using BladePeek,
-    please contact the developer at
-    <a href="mailto:g.carrascal@hotmail.com">g.carrascal@hotmail.com</a>.
+    For help, bug reports, or access requests, contact:
+    <a href="mailto:guillermo.lozano@rwe.com">guillermo.lozano@rwe.com</a>.
   </p>
 
   <p>
     <em>
       BladePeek is intended for use by trained wind turbine technicians as part
-      of your company’s existing inspection procedures. It does not replace
-      safety training, work instructions, or engineering judgement. License
-      tokens are managed internally; please contact your engineering
-      department with the device code to request activation.
+      of RWE’s inspection procedures. It does not replace safety training,
+      work instructions, or engineering judgement. Always follow your site
+      safety rules, work instructions, and lockout/tagout procedures.
     </em>
   </p>
 
